@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #ff00c8, #ff006a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ff0481;
+    padding: 40px;
+    border-radius: 12px;
+    width: 400px;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.subtitle {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #d1d1d1;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1e222c;
+    color: #fff;
+    font-size: 14px;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #ffaa00;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e69500;
+}
