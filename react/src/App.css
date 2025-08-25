@@ -1,0 +1,126 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  margin-top:300px;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #6b21a8; /* morado */
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.menu-desktop {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu-desktop a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-desktop a:hover {
+  text-decoration: underline;
+}
+
+/* Botón ☰ */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Menú móvil */
+.menu-mobile {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.menu-mobile a {
+  color: white;
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
+.menu-mobile a:hover {
+  text-decoration: underline;
+}
+
+/* Contenido principal */
+.main-content {
+  padding-top: 100px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.main-content h1 {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.main-content p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+section h2 {
+  font-size: 1.75rem;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsivo */
+@media (max-width: 640px) {
+  .menu-desktop {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-mobile {
+    background-color: #6b21a8;
+  }
+}
